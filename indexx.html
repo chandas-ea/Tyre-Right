@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="style.css"></link>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+       </style>
+</head>
+<body id="body">
+    <div id="heading" onmouseenter="change()" onmouseleave="unchange()">Type Right</div><br><hr>
+    <div id="about" >What is TYPE RIGHT ? </div>
+    <div id="line1"></div>
+    <div id="aboutthe" onmouseenter="abouthover()" onmouseleave="unabouthover()">
+        Lets you practise on your <br>writing pace and in literacy skill development <br>along with muscle memory.
+    </div>
+    <div id="howtoplay">How To Play !</div>
+    <div id="line2"></div>
+    <div id="how"  onmouseenter="howhover()" onmouseleave="unhowhover()">
+        Type the words as fast <br>as you can within the given time period <br>and score points on each correct type.
+    </div>
+   
+    <div id="game">
+        <span id='oone'>Type Right</span> <br>
+        <div>
+            <div id="words"><br></div>
+            <div>
+            <input id ="type" onchange="changeword()" type="text" autocomplete="off"  placeholder="type here"><br>
+            <button id="button" onclick="getgo()">Start</button>
+            <div id="trance"></div>
+            <div >
+                <span id='sscore' >Score:<span id="score"> </span></span>
+                <span id="time"></span>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div id="results">
+        <h1>Result</h1>
+        <div id='finalscore'>Complete the test to see your result !! </div>
+
+    </div>
+
+    
+    
+    <footer id="contact">
+        <span id="ccon" onmouseenter="shift()" onmouseleave="unshit()">Contact</span>
+        <div id="dcon" onmouseenter="shift()" onmouseleave="unshit()">
+            <a href="https://www.linkedin.com/in/chandas-e-219465207/" target="_blank">
+                <img src="ld.png" width="200px" height="20px">
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="javas.js"></script>
+</html>
